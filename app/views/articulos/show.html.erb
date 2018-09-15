@@ -8,5 +8,12 @@
     <%= @articulo.text %>
 </p>
 
+<h2>Comentarios</h2>
+
+<%= render @articulo.comentarios %>
+
+<h2>Agregar comentario:</h2>
+<%= render 'comentarios/form'%>
+
 <%= link_to 'Editar', edit_articulo_path(@articulo)%> |
 <%= link_to 'Regresar', articulos_path%>

@@ -1,5 +1,5 @@
 class ArticulosController < ApplicationController
-
+http_basic_authenticate_with name: "eduardo", password: "simon", except: [:index, :show]
     def create
         @articulo = Articulo.new(articulo_params)
         
